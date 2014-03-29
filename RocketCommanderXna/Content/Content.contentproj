@@ -1,0 +1,482 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>cddac100-5132-4fd8-a7ba-fa48f21ca4c0</ProjectGuid>
+    <ProjectTypeGuids>{96E2B04D-8817-42c6-938A-82C39BA4D311};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <XnaFrameworkVersion>v2.0</XnaFrameworkVersion>
+    <PlatformTarget>x86</PlatformTarget>
+    <OutputPath>bin\$(Platform)\$(Configuration)</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <XnaPlatform>Windows</XnaPlatform>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <XnaPlatform>Windows</XnaPlatform>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Xna.Framework.Content.Pipeline.EffectImporter, Version=2.0.0.0, Culture=neutral, PublicKeyToken=6d5c3888ef60e27d, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Content.Pipeline.FBXImporter, Version=2.0.0.0, Culture=neutral, PublicKeyToken=6d5c3888ef60e27d, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Content.Pipeline.TextureImporter, Version=2.0.0.0, Culture=neutral, PublicKeyToken=6d5c3888ef60e27d, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Content.Pipeline.XImporter, Version=2.0.0.0, Culture=neutral, PublicKeyToken=6d5c3888ef60e27d, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="XnaGraphicEngineContentProcessor, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\XnaGraphicEngineContentProcessor\bin\x86\Debug\XnaGraphicEngineContentProcessor.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="asteroid1.X">
+      <Name>asteroid1</Name>
+      <Importer>XImporter</Importer>
+      <Processor>XnaGraphicEngineModelProcessor</Processor>
+    </Compile>
+    <Compile Include="asteroid1Low.X">
+      <Name>asteroid1Low</Name>
+      <Importer>XImporter</Importer>
+      <Processor>XnaGraphicEngineModelProcessor</Processor>
+    </Compile>
+    <Compile Include="asteroid2.X">
+      <Name>asteroid2</Name>
+      <Importer>XImporter</Importer>
+      <Processor>XnaGraphicEngineModelProcessor</Processor>
+    </Compile>
+    <Compile Include="asteroid2Low.X">
+      <Name>asteroid2Low</Name>
+      <Importer>XImporter</Importer>
+      <Processor>XnaGraphicEngineModelProcessor</Processor>
+    </Compile>
+    <Compile Include="asteroid3.X">
+      <Name>asteroid3</Name>
+      <Importer>XImporter</Importer>
+      <Processor>XnaGraphicEngineModelProcessor</Processor>
+    </Compile>
+    <Compile Include="asteroid3Low.X">
+      <Name>asteroid3Low</Name>
+      <Importer>XImporter</Importer>
+      <Processor>XnaGraphicEngineModelProcessor</Processor>
+    </Compile>
+    <Compile Include="asteroid4.X">
+      <Name>asteroid4</Name>
+      <Importer>XImporter</Importer>
+      <Processor>XnaGraphicEngineModelProcessor</Processor>
+    </Compile>
+    <Compile Include="asteroid4Low.X">
+      <Name>asteroid4Low</Name>
+      <Importer>XImporter</Importer>
+      <Processor>XnaGraphicEngineModelProcessor</Processor>
+    </Compile>
+    <Compile Include="asteroid5.X">
+      <Name>asteroid5</Name>
+      <Importer>XImporter</Importer>
+      <Processor>XnaGraphicEngineModelProcessor</Processor>
+    </Compile>
+    <Compile Include="asteroid5Low.X">
+      <Name>asteroid5Low</Name>
+      <Importer>XImporter</Importer>
+      <Processor>XnaGraphicEngineModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Bomb.X">
+      <Name>Bomb</Name>
+      <Importer>XImporter</Importer>
+      <Processor>XnaGraphicEngineModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Circle.dds">
+      <Name>Circle</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <None Include="Easy Flight.level">
+      <Name>Easy Flight</Name>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <Compile Include="explosion0001.dds">
+      <Name>explosion0001</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="explosion0002.dds">
+      <Name>explosion0002</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="explosion0003.dds">
+      <Name>explosion0003</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="explosion0004.dds">
+      <Name>explosion0004</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="explosion0005.dds">
+      <Name>explosion0005</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="explosion0006.dds">
+      <Name>explosion0006</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="explosion0007.dds">
+      <Name>explosion0007</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="explosion0008.dds">
+      <Name>explosion0008</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="explosion0009.dds">
+      <Name>explosion0009</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="explosion0010.dds">
+      <Name>explosion0010</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="explosion0011.dds">
+      <Name>explosion0011</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="explosion0012.dds">
+      <Name>explosion0012</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="explosion0013.dds">
+      <Name>explosion0013</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="explosion0014.dds">
+      <Name>explosion0014</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="explosion0015.dds">
+      <Name>explosion0015</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="explosion0016.dds">
+      <Name>explosion0016</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="explosion0017.dds">
+      <Name>explosion0017</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="explosion0018.dds">
+      <Name>explosion0018</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="explosion0019.dds">
+      <Name>explosion0019</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="explosion0020.dds">
+      <Name>explosion0020</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="explosion0021.dds">
+      <Name>explosion0021</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="explosion0022.dds">
+      <Name>explosion0022</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="explosion0023.dds">
+      <Name>explosion0023</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="explosion0024.dds">
+      <Name>explosion0024</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="explosion0025.dds">
+      <Name>explosion0025</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="explosion0026.dds">
+      <Name>explosion0026</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="explosion0027.dds">
+      <Name>explosion0027</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="explosion0028.dds">
+      <Name>explosion0028</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="explosion0029.dds">
+      <Name>explosion0029</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="explosion0030.dds">
+      <Name>explosion0030</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="explosion0031.dds">
+      <Name>explosion0031</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="explosion0032.dds">
+      <Name>explosion0032</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="explosion0033.dds">
+      <Name>explosion0033</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="explosion0034.dds">
+      <Name>explosion0034</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="explosion0035.dds">
+      <Name>explosion0035</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="ExtraLife.X">
+      <Name>ExtraLife</Name>
+      <Importer>XImporter</Importer>
+      <Processor>XnaGraphicEngineModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Fuel.X">
+      <Name>Fuel</Name>
+      <Importer>XImporter</Importer>
+      <Processor>XnaGraphicEngineModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Glow.dds">
+      <Name>Glow</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="GlowShaderLookup.dds">
+      <Name>GlowShaderLookup</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Goal.X">
+      <Name>Goal</Name>
+      <Importer>XImporter</Importer>
+      <Processor>XnaGraphicEngineModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Halo.dds">
+      <Name>Halo</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Health.X">
+      <Name>Health</Name>
+      <Importer>XImporter</Importer>
+      <Processor>XnaGraphicEngineModelProcessor</Processor>
+    </Compile>
+    <Compile Include="HitDirection.dds">
+      <Name>HitDirection</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Lens.dds">
+      <Name>Lens</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="LightEffect.dds">
+      <Name>LightEffect</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="LineRendering.fx">
+      <Name>LineRendering</Name>
+      <Importer>EffectImporter</Importer>
+      <Processor>EffectProcessor</Processor>
+    </Compile>
+    <None Include="Lost Civilization.level">
+      <Name>Lost Civilization</Name>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <Compile Include="MouseCursor.dds">
+      <Name>MouseCursor</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="ParallaxMapping.fx">
+      <Name>ParallaxMapping</Name>
+      <Importer>EffectImporter</Importer>
+      <Processor>EffectProcessor</Processor>
+    </Compile>
+    <Compile Include="PostScreenGlow.fx">
+      <Name>PostScreenGlow</Name>
+      <Importer>EffectImporter</Importer>
+      <Processor>EffectProcessor</Processor>
+    </Compile>
+    <Compile Include="PreScreenSkyCubeMapping.fx">
+      <Name>PreScreenSkyCubeMapping</Name>
+      <Importer>EffectImporter</Importer>
+      <Processor>EffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Ring.dds">
+      <Name>Ring</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="rocket.X">
+      <Name>rocket</Name>
+      <Importer>XImporter</Importer>
+      <Processor>XnaGraphicEngineModelProcessor</Processor>
+    </Compile>
+    <Compile Include="ScreenBorderFadeout.dds">
+      <Name>ScreenBorderFadeout</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="SmallAsteroid1.X">
+      <Name>SmallAsteroid1</Name>
+      <Importer>XImporter</Importer>
+      <Processor>XnaGraphicEngineModelProcessor</Processor>
+    </Compile>
+    <Compile Include="SmallAsteroid2.X">
+      <Name>SmallAsteroid2</Name>
+      <Importer>XImporter</Importer>
+      <Processor>XnaGraphicEngineModelProcessor</Processor>
+    </Compile>
+    <Compile Include="SmallAsteroid3.X">
+      <Name>SmallAsteroid3</Name>
+      <Importer>XImporter</Importer>
+      <Processor>XnaGraphicEngineModelProcessor</Processor>
+    </Compile>
+    <Compile Include="SpaceSkyCubeMap.dds">
+      <Name>SpaceSkyCubeMap</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Speed.X">
+      <Name>Speed</Name>
+      <Importer>XImporter</Importer>
+      <Processor>XnaGraphicEngineModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Streaks.dds">
+      <Name>Streaks</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Sun.dds">
+      <Name>Sun</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <None Include="The Revenge.level">
+      <Name>The Revenge</Name>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Valley of Death.level">
+      <Name>Valley of Death</Name>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Easy Flight.png">
+      <Name>Easy Flight</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="ExtraButtons.png">
+      <Name>ExtraButtons</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="GameFont.png">
+      <Name>GameFont</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="HelpScreen.png">
+      <Name>HelpScreen</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Hud.png">
+      <Name>Hud</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="InGame.png">
+      <Name>InGame</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Lost Civilization.png">
+      <Name>Lost Civilization</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="MainMenu.png">
+      <Name>MainMenu</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="The Revenge.png">
+      <Name>The Revenge</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Valley of Death.png">
+      <Name>Valley of Death</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Sounds\RocketCommanderXna.xap">
+      <Name>RocketCommanderXna</Name>
+      <Importer>XactImporter</Importer>
+      <Processor>XactProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\XNA Game Studio\v2.0\Microsoft.Xna.GameStudio.ContentPipeline.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

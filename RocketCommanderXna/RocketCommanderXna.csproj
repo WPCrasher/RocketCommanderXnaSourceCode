@@ -1,0 +1,136 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{7FDE518A-21AE-4B08-8E67-05B0B7A8230C}</ProjectGuid>
+    <ProjectTypeGuids>{6D335F3A-9D43-41b4-9D22-F6F17C4BE596};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>RocketCommanderXna</RootNamespace>
+    <AssemblyName>RocketCommanderXna</AssemblyName>
+    <XnaFrameworkVersion>v2.0</XnaFrameworkVersion>
+    <XnaPlatform>Windows</XnaPlatform>
+    <XnaCrossPlatformGroupID>79136a05-bc05-4bc2-8b7a-c6404f8e7f92</XnaCrossPlatformGroupID>
+    <ApplicationIcon>App.ico</ApplicationIcon>
+    <Thumbnail>
+    </Thumbnail>
+    <StartupObject>RocketCommanderXna.Program</StartupObject>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\x86\Debug</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoStdLib>true</NoStdLib>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\x86\Release</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoStdLib>true</NoStdLib>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Xna.Framework, Version=2.0.0.0, Culture=neutral, PublicKeyToken=6d5c3888ef60e27d, processorArchitecture=x86">
+      <Private>False</Private>
+      <SpecificVersion>True</SpecificVersion>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Game, Version=2.0.0.0, Culture=neutral, PublicKeyToken=6d5c3888ef60e27d, processorArchitecture=MSIL">
+      <Private>False</Private>
+      <SpecificVersion>True</SpecificVersion>
+    </Reference>
+    <Reference Include="mscorlib">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.XML" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="GameScreens\Credits.cs" />
+    <Compile Include="GameScreens\Help.cs" />
+    <Compile Include="GameScreens\Highscores.cs" />
+    <Compile Include="GameScreens\IGameScreen.cs" />
+    <Compile Include="GameScreens\MainMenu.cs" />
+    <Compile Include="GameScreens\Mission.cs" />
+    <Compile Include="GameScreens\MissionSelection.cs" />
+    <Compile Include="GameScreens\Options.cs" />
+    <Compile Include="Game\Asteroid.cs" />
+    <Compile Include="Game\BaseAsteroidManager.cs" />
+    <Compile Include="Game\BaseGame.cs" />
+    <Compile Include="Game\GameAsteroidManager.cs" />
+    <Compile Include="Game\Level.cs" />
+    <Compile Include="Game\PhysicsAsteroidManager.cs" />
+    <Compile Include="Game\Player.cs" />
+    <Compile Include="Game\ScreenshotCapturer.cs" />
+    <Compile Include="Game\SmallAsteroids.cs" />
+    <Compile Include="Game\SpaceCamera.cs" />
+    <Compile Include="Game\TestGame.cs" />
+    <Compile Include="Graphics\AnimatedModel.cs" />
+    <Compile Include="Graphics\AnimatedTexture.cs" />
+    <Compile Include="Graphics\IGraphicContent.cs" />
+    <Compile Include="Graphics\LensFlare.cs" />
+    <Compile Include="Graphics\LineManager2D.cs" />
+    <Compile Include="Graphics\LineManager3D.cs" />
+    <Compile Include="Graphics\Material.cs" />
+    <Compile Include="Graphics\MeshRenderManager.cs" />
+    <Compile Include="Graphics\Model.cs" />
+    <Compile Include="Graphics\SpriteHelper.cs" />
+    <Compile Include="Graphics\TangentVertex.cs" />
+    <Compile Include="Graphics\Texture.cs" />
+    <Compile Include="Graphics\TextureFont.cs" />
+    <Compile Include="Helpers\ColorHelper.cs" />
+    <Compile Include="Helpers\Directories.cs" />
+    <Compile Include="Helpers\DisposeHelper.cs" />
+    <Compile Include="Helpers\FileHelper.cs" />
+    <Compile Include="Helpers\Input.cs" />
+    <Compile Include="Helpers\Log.cs" />
+    <Compile Include="Helpers\RandomHelper.cs" />
+    <Compile Include="Helpers\StringHelper.cs" />
+    <Compile Include="Helpers\Vector3Helper.cs" />
+    <Compile Include="Helpers\WindowsHelper.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\GameSettings.cs" />
+    <Compile Include="Properties\Texts.cs" />
+    <Compile Include="RocketCommanderGame.cs" />
+    <Compile Include="Shaders\ParallaxShader.cs" />
+    <Compile Include="Shaders\PostScreenGlow.cs" />
+    <Compile Include="Shaders\PreScreenSkyCubeMapping.cs" />
+    <Compile Include="Shaders\RenderToTexture.cs" />
+    <Compile Include="Shaders\ShaderEffect.cs" />
+    <Compile Include="Shaders\VBScreenHelper.cs" />
+    <Compile Include="Sounds\Sound.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App.ico" />
+    <Content Include="GameThumbnail.png" />
+    <Content Include="License.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <NestedContentProject Include="Content\Content.contentproj">
+      <Project>cddac100-5132-4fd8-a7ba-fa48f21ca4c0</Project>
+      <Visible>False</Visible>
+    </NestedContentProject>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\XNA Game Studio\v2.0\Microsoft.Xna.GameStudio.Common.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\XNA Game Studio\v2.0\Microsoft.Xna.GameStudio.NestedContent.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
